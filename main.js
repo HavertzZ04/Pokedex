@@ -2,20 +2,41 @@ const pokemonContainer = document.querySelector(".pokemon-container");
 const spinner = document.querySelector("#spinner")
 const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
+const audio = document.querySelector('audio');
+const playButton = document.getElementById('playBtn');
+const pauseButton = document.getElementById('stopBtn');
+const restartButton = document.getElementById('restartBtn');
+
+
+
+
+playButton.addEventListener('click', function() {
+  audio.play();
+});
+
+pauseButton.addEventListener('click', function() {
+  audio.pause();
+});
+
+restartButton.addEventListener('click', function() {
+  audio.currentTime = 0;
+  audio.play();
+});
+
 
 let offset = 1;
-let limit = 11;
+let limit = 19;
 
 previous.addEventListener("click", () => {
     if (offset != 1){
-        offset -= 12;
+        offset -= 20;
         removeChildNodes(pokemonContainer);
         fetchPokemons(offset, limit);
     }
 });
 
 next.addEventListener("click", () => {
-    offset += 12;
+    offset += 20;
     removeChildNodes(pokemonContainer);
     fetchPokemons(offset, limit);
 });
@@ -52,7 +73,8 @@ function createPokemon(pokemon) {
   spriteContainer.classList.add("img-container");
 
   const sprite = document.createElement("img");
-  sprite.src = pokemon.sprites.front_default;
+  sprite.classList.add("pokeImage")
+  sprite.src = pokemon.sprites.other.home.front_default;
 
   spriteContainer.appendChild(sprite);
 

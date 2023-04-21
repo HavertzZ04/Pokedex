@@ -50,18 +50,14 @@ body {
   font-size: 1.2rem;
 }
 
-#spinner {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
+
 
 .pagination {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .card-container {
@@ -98,7 +94,7 @@ body {
 
 /*******************************/
 .search{
-  margin: 2rem auto;
+  margin: 1rem auto 2rem auto;
   height: 5rem auto;
   background-color: #fff;
   padding: 0.8rem;
@@ -128,12 +124,10 @@ body {
   font-weight: 300;
   color: black;
   transition: width 0.4s linear;
+  margin-left: 2rem;
 }
 
-.search:hover>.search-icon{
-  background:#2575bb;
-  color:#fff;
-}
+
 .search-icon{
 
   height: 50px;
@@ -142,18 +136,60 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #2575bb;
 
 }
 a:link{
   text-decoration: none;
 }
 
-#container-options{
+#ball{
+  width: 3rem;
+  height: 3rem;
+}
 
+#container-options{
   margin: 3rem 0 2rem 0;
 }
+
+
+#row1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.8rem;
+  margin: 0.5rem 0 2rem 0;
+}
+
+#row1 > button {
+  padding: 1rem 2rem;
+}
+
+#purple{
+  background-color: #7c38bc;
+  color: #fff;
+}
+
+#gray{
+  background-color: #576668;
+  color: #fff;
+}
+
+#pink{
+  background-color: #ff6ff3;
+  color: #fff;
+}
+
+#orange {
+  background-color: #ff7f00;
+  color: #fff;
+}
+
+#brown {
+  background-color: #785800;
+  color: #fff;
+}
+
+
+
 
 
 /*******/
@@ -195,18 +231,25 @@ footer > img {
 
 /*****/
 
-audio {
-  width: 100%;
-  background-color: #f0f0f0;
-  padding: 10px;
-}
 
-#playBtn{
+
+#playBtn, #stopBtn, #restartBtn {
+  margin-top: 1rem;
   background-color: #1b356e00;
   border: none;
 }
 
 #playBtn > img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#stopBtn > img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#restartBtn > img {
   width: 3rem;
   height: 3rem;
 }

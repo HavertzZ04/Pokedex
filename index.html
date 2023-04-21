@@ -15,24 +15,53 @@
 <body>
     <img src="images/logo.png" class="img-fluid" id="title" alt="" >
 
-    <div class="d-flex justify-content-center h-100" id="fullSearch">
-        <div class="row" id="container-options">
-            <div class="search search-container">
-                <input type="text" class="search-input" placeholder="Search..." name="" id="search-bar">
+    <div class="d-flex justify-content-center h-100 container" id="fullSearch">
+        <div id="container-options">
+            <div class="search search-container col-12">
+                <input type="text" class="search-input text-center" placeholder="Search..." name="" id="search-bar">
                 <a href="#" class="search-icon" id="search-button">
-                    <i class="material-icons">search</i>
+                    <img src="images/search.png" id="ball" alt="">
                 </a>
             </div>
+
+            <div class="col-12">
+                <div class="col" id="row1">
+                    <button type="button" class="btn btn-success">Bug</button>
+                    <button type="button" class="btn" id="purple">Dark</button>
+                    <button type="button" class="btn btn-info">Dragon</button>
+                    <button type="button" class="btn btn-warning">Electric</button>
+                    <button type="button" class="btn" id="pink">Fairy</button>
+                    <button type="button" class="btn btn-danger">Fighting</button>
+                </div>
+                <div class="col" id="row1">
+                    <button type="button" class="btn" id="orange">Fire</button>
+                    <button type="button" class="btn btn-info">Flying</button>
+                    <button type="button" class="btn" id="purple">Ghost</button>
+                    <button type="button" class="btn btn-success">Grass</button>
+                    <button type="button" class="btn" id="brown">Ground</button>
+                    <button type="button" class="btn btn-primary">Ice</button>
+                </div>
+                <div class="col" id="row1">
+                    <button type="button" class="btn btn-danger">Normal</button>
+                    <button type="button" class="btn" id="purple">Poison</button>
+                    <button type="button" class="btn" id="pink">Psychic</button>
+                    <button type="button" class="btn" id="gray">Rock</button>
+                    <button type="button" class="btn btn-success">Steel</button>
+                    <button type="button" class="btn btn-primary">Water</button>
+                </div>
+            </div>
+
+            
             <div class="col">
-                <audio src="music/song.mp3" loop autoplay></audio>
+                <audio src="music/son.mp3" loop autoplay></audio>
                 <button id="playBtn">
                     <img src="images/play-button.png" alt="">
                 </button>
                 <button id="stopBtn">
-                    stop
+                    <img src="images/pause-button.png" alt="">
                 </button>
                 <button id="restartBtn">
-                    restart
+                    <img src="images/repeat-once.png" alt="">
                 </button>
             </div>
         </div>
@@ -50,11 +79,7 @@
             </li>
         </ul>
     </nav> 
-         
-    
-    <div class="spinner-border text-light" id="spinner" role="status">
-        <span class="visually-hidden">Loading...</span>
-    </div>
+        
 
     <footer>
         <a href="">by: HavertzZ</a>

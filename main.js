@@ -1,5 +1,4 @@
 const pokemonContainer = document.querySelector(".pokemon-container");
-const spinner = document.querySelector("#spinner")
 const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
 const audio = document.querySelector('audio');
@@ -46,12 +45,10 @@ function fetchPokemon(id){
     .then((res) => res.json())
     .then((data) => {
         createPokemon(data);
-        spinner.style.display = "none";
     })
 }
 
 function fetchPokemons(offset, limit) {
-    spinner.style.display = "block";
     for(let i = offset; i <= offset + limit; i++){
         fetchPokemon(i)
     }

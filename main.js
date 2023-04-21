@@ -2,10 +2,28 @@ const pokemonContainer = document.querySelector(".pokemon-container");
 const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
 const audio = document.querySelector('audio');
-const playButton = document.getElementById('playBtn');
-const pauseButton = document.getElementById('stopBtn');
-const restartButton = document.getElementById('restartBtn');
+const playButton = document.querySelector('#playBtn');
+const pauseButton = document.querySelector('#stopBtn');
+const restartButton = document.querySelector('#restartBtn');
 
+
+function searchPokemon(searchTerm) {
+  fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error('Pokémon no encontrado');
+      }
+      return res.json();
+    })
+    .then((data) => {
+      removeChildNodes(pokemonContainer);
+
+      createPokemon(data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
 
 
 

@@ -165,28 +165,28 @@ a:link{
   padding: 1rem 2rem;
 }
 
-#purple{
+#dark, #poison, #ghost{
   background-color: #7c38bc;
   color: #fff;
 }
 
-#gray{
+#rock{
   background-color: #576668;
   color: #fff;
 }
 
-#pink{
+#fairy, #psychic{
   background-color: #ff6ff3;
   color: #fff;
 }
 
-#orange {
+#fire {
   background-color: #ff7f00;
   color: #fff;
 }
 
-#brown {
-  background-color: #785800;
+#ground {
+  background-color: #674000;
   color: #fff;
 }
 
@@ -241,17 +241,15 @@ footer > img {
   border: none;
 }
 
-#playBtn > img {
+#playBtn > img, #stopBtn > img ,#restartBtn > img {
   width: 3rem;
   height: 3rem;
+  transition: width 0.3s ease;
+  transition: height 0.3s ease;
 }
 
-#stopBtn > img {
-  width: 3rem;
-  height: 3rem;
-}
-
-#restartBtn > img {
-  width: 3rem;
-  height: 3rem;
-}
+/*
+#playBtn > img:hover, #stopBtn > img:hover, #restartBtn > img:hover {
+  width: 2.8rem;
+  height: 2.8rem;
+}*/

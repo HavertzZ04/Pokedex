@@ -1,6 +1,10 @@
-export default {
+export default{
+
+    previous : "Previous",
+    next : "Next",
+
     show(){
-        document.querySelector("#pagination"). insertAdjacentHTML("beforeend",
+        document.querySelector("#pagination").insertAdjacentHTML("beforeend", 
         `
         <ul class="pagination justify-content-center">
             <li class="page-item" id="previous">

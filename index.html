@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
-    <script src="main.js" defer module></script>
+    <script src="app.js" type="module" defer ></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,79 +14,11 @@
 </head>
 <body>
     <img src="images/logo.png" class="img-fluid" id="title" alt="" >
-
     <div class="d-flex justify-content-center h-100 container" id="fullSearch">
-        <div id="container-options">
-            <div class="search search-container col-12 searchForm">
-                <input type="text" class="search-input text-center" placeholder="Search..." name="" id="search-bar">
-                <button type="submit" class="search-icon" id="searchInput">
-                    <img src="images/search.png" id="ball" alt="">
-                </button>
-            </div>
-
-            <div class="col-12">
-                <div class="col" id="row1">
-                    <button type="button" class="btn btn-success">Bug</button>
-                    <button type="button" class="btn" id="purple">Dark</button>
-                    <button type="button" class="btn btn-info">Dragon</button>
-                    <button type="button" class="btn btn-warning">Electric</button>
-                    <button type="button" class="btn" id="pink">Fairy</button>
-                    <button type="button" class="btn btn-danger">Fighting</button>
-                </div>
-                <div class="col" id="row1">
-                    <button type="button" class="btn" id="orange">Fire</button>
-                    <button type="button" class="btn btn-info">Flying</button>
-                    <button type="button" class="btn" id="purple">Ghost</button>
-                    <button type="button" class="btn btn-success">Grass</button>
-                    <button type="button" class="btn" id="brown">Ground</button>
-                    <button type="button" class="btn btn-primary">Ice</button>
-                </div>
-                <div class="col" id="row1">
-                    <button type="button" class="btn btn-danger">Normal</button>
-                    <button type="button" class="btn" id="purple">Poison</button>
-                    <button type="button" class="btn" id="pink">Psychic</button>
-                    <button type="button" class="btn" id="gray">Rock</button>
-                    <button type="button" class="btn btn-success">Steel</button>
-                    <button type="button" class="btn btn-primary">Water</button>
-                </div>
-            </div>
-
-            
-            <div class="col">
-                <audio src="music/son.mp3" loop autoplay></audio>
-                <button id="playBtn">
-                    <img src="images/play-button.png" alt="">
-                </button>
-                <button id="stopBtn">
-                    <img src="images/pause-button.png" alt="">
-                </button>
-                <button id="restartBtn">
-                    <img src="images/repeat-once.png" alt="">
-                </button>
-            </div>
-        </div>
+        <div id="container-options"></div>
     </div>
-
     <div class="pokemon-container"></div>
-
-    <nav id="pagination">
-        <ul class="pagination justify-content-center">
-            <li class="page-item" id="previous">
-                <a class="page-link" href="#" aria-label="Previous">Previous</a>
-            </li>
-            <li class="page-item" id="next">
-                <a class="page-link" href="#" aria-label="Next">Next</a>
-            </li>
-        </ul>
-    </nav> 
-        
-
-    <footer>
-        <a href="">by: HavertzZ</a>
-        <img src="images/github.png" alt="">
-    </footer>
-
-    
-
+    <nav id="pagination"></nav> 
+    <footer></footer>
 </body>
 </html>

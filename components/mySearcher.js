@@ -1,16 +1,12 @@
 export default{
     placeHolder :"Search...",
-    img : "images/search.png",
+    img : "images/logo.png",
 
     show(){
         document.querySelector("#container-options").insertAdjacentHTML("beforeend", 
         `
-        <div class="search search-container col-12 searchForm">
-            <input type="text" class="search-input text-center" placeholder=${this.placeHolder} name="" id="search-bar">
-            <button type="submit" class="search-icon" id="searchInput">
-                <img src=${this.img} id="ball" alt="">
-            </button>
-        </div>
+        <img src=${this.img} class="img-fluid" id="title" alt="" >
+        <input type="text" class="search text-center col-lg-6 col-md-6 col-xl-6 col-sm-12" placeholder=${this.placeHolder} name="" id="search-bar">
         `
         )
     }

@@ -6,11 +6,13 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-#title{
+#title{ /*The big image in the top of the site*/
   width: 70%;
   margin: 0rem 0 3rem 0;
   padding-top: 1rem;
 }
+
+
 
 .pokemon-container {
   display: grid;
@@ -51,16 +53,6 @@ body {
   font-size: 1.2rem;
 }
 
-
-
-.pagination {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
 .card-container {
   position: relative;
   width: 100%;
@@ -93,7 +85,7 @@ body {
   text-align: left;
 }
 
-/*******************************/
+/*Search bar*/
 .search{
   margin: 1rem auto 2rem auto;
   height: 5rem auto;
@@ -107,60 +99,15 @@ body {
   backdrop-filter: blur( 3px ); 
 }
 
-
-
-
 a:link{
   text-decoration: none;
 }
-
 
 #container-options{
   margin: 3rem 0 2rem 0;
 }
 
-/*
-#row1 {
-  display: flex;
-  justify-content: space-around;
-  gap: 1.8rem;
-  margin: 0.5rem 0 2rem 0;
-}
-
-#row1 > button {
-  padding: 1rem 2rem;
-}
-
-#dark, #poison, #ghost{
-  background-color: #7c38bc;
-  color: #fff;
-}
-
-#rock{
-  background-color: #576668;
-  color: #fff;
-}
-
-#fairy, #psychic{
-  background-color: #ff6ff3;
-  color: #fff;
-}
-
-#fire {
-  background-color: #ff7f00;
-  color: #fff;
-}
-
-#ground {
-  background-color: #674000;
-  color: #fff;
-}
-*/
-
-
-
-
-/*******/
+/*Stats flipcards*/
 .stats-container {
   margin: 2.1rem 10% 0 10%;
 }
@@ -169,9 +116,16 @@ a:link{
   margin: 0.3rem 0 0 5%;
 }
 
+/*Pagination*/
+.pagination {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 
-/*********/
-
+/*Footer*/
 footer{
   background-color: #1b356e;
   padding: 1.5rem 0 1.2rem 0;
@@ -188,7 +142,6 @@ footer > a:hover {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.3rem;
-
 }
 
 footer > img {
@@ -196,11 +149,7 @@ footer > img {
   margin: 0 0 0.3rem 0;
 }
 
-
-/*****/
-
-
-
+/*Music buttons*/
 #playBtn, #stopBtn, #restartBtn {
   margin-top: 1rem;
   background-color: #1b356e00;
@@ -214,9 +163,7 @@ footer > img {
   transition: height 0.3s ease;
 }
 
-
 @media (max-width: 768px) {
-
   #title{
     width: 85%;
     margin: 0rem 0 2rem 0;
@@ -233,7 +180,6 @@ footer > img {
   .pokemon-container {
     display: grid;
     grid-template-columns: 1fr;
-
     width: 80%;
     margin-left: auto;
     margin-right: auto;

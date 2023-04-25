@@ -4,7 +4,6 @@ export default{
     stop : "images/pause-button.png",
     restart : "images/repeat-once.png",
 
-
     show(){
         document.querySelector("#container-options").insertAdjacentHTML("beforeend", 
         `
